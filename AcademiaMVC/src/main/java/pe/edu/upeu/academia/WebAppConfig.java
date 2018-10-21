@@ -28,7 +28,7 @@ import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
 
 @Configuration
-@ComponentScan("pe.edu.upeu.academico")
+@ComponentScan("pe.edu.upeu.academia")
 @EnableWebMvc
 
 public class WebAppConfig extends WebMvcConfigurerAdapter{
@@ -51,7 +51,7 @@ public class WebAppConfig extends WebMvcConfigurerAdapter{
 	@Bean
 	public UrlBasedViewResolver setupViewResolver() {
 		UrlBasedViewResolver resolver = new UrlBasedViewResolver();
-		resolver.setPrefix("/WEB-INF/upeu/modulos/");
+		resolver.setPrefix("/WEB-INF/payex/modulos/");
 		resolver.setSuffix(".jsp");
 		resolver.setViewClass(JstlView.class);
 		return resolver;

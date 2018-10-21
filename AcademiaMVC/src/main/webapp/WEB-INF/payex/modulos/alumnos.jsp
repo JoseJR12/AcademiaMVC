@@ -1,5 +1,3 @@
-   <link rel='stylesheet' href='resources/bootstrap/4.1.2/css/bootstrap.min.css'>
-        <script type='text/javascript' src='resources/bootstrap/4.1.2/js/bootstrap.min.js'></script>
 <%@taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
@@ -7,6 +5,7 @@
 <h2>Alumnos</h2>
    Cantidad de Registros alunmos registrados: 
    <br/>
+   ${ListaPersona}
    <c:if test="${!empty ListaPersona}">
    <table class="table">
   <thead class="thead-dark">
